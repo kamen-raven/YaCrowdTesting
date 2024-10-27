@@ -1,0 +1,47 @@
+.wine {
+
+}
+
+.milk {
+  margin-left: 5px;
+}
+
+.jam {
+  margin-left: 2px;
+}
+
+.cheese {
+  margin-left: 9px;
+}
+
+.meat {
+
+}
+
+.chicken {
+  margin-left: 5px;
+}
+
+.chicken img {
+  object-position: 0 -1px;
+}
+
+.chips {
+  margin-left: 14px;
+}
+
+.chips img {
+  object-position: 0 5px;
+  overflow: visible;
+}
+
+.pineapple {
+  margin-left: 16px;
+}
+
+.banana {
+}
+
+.apple {}
+
+.salad {}
