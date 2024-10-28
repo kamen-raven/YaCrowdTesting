@@ -1,0 +1,16 @@
+.item {
+  cursor: grab;
+  display: flex;
+  scale: 1;
+  transition: .3s linear scale;
+}
+
+.item:hover {
+  scale: 1.1;
+  transition: .3s linear scale;
+}
+
+.item__image {
+  object-fit: contain;
+  width: min-content;
+}

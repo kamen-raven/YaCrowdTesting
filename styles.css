@@ -1,0 +1,19 @@
+/* подключение normalize */
+@import url('./style/vendor/normalize.css');
+
+/* общие стили страницы */
+@import url('./style/elements/page.css');
+
+/* стили витрины, полки и предметов */
+@import url('./style/elements/showcase.css');
+@import url('./style/elements/shelf.css');
+@import url('./style/elements/items.css');
+
+/* стили продуктов */
+@import url('./style/elements/products.css');
+
+/* стили корзины */
+@import url('./style/elements/cart.css');
+
+/* стили кнопки */
+@import url('./style/elements/button.css');

@@ -1,25 +1,28 @@
 .wine {
-
+  width: 37px;
 }
 
 .milk {
   margin-left: 5px;
+  width: 37px;
 }
 
 .jam {
   margin-left: 2px;
+  width: 46px;
 }
 
 .cheese {
   margin-left: 9px;
+  width: 36px;
 }
 
 .meat {
-
+  width: 49px;
 }
 
 .chicken {
-  margin-left: 5px;
+  width: 55px;
 }
 
 .chicken img {
@@ -27,6 +30,7 @@
 }
 
 .chips {
+  width: 76px;
   margin-left: 14px;
 }
 
@@ -36,12 +40,18 @@
 }
 
 .pineapple {
+  width: 35px;
   margin-left: 16px;
 }
 
 .banana {
+  width: 47px;
 }
 
-.apple {}
+.apple {
+  width: 31px;
+}
 
-.salad {}
+.salad {
+  width: 62px;
+}

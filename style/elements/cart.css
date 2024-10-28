@@ -1,0 +1,46 @@
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 276px;
+  height: 325px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart__image {
+  object-fit: contain;
+  position: absolute;
+  z-index: 1;
+  top: -95px;
+  pointer-events: none;
+}
+
+.cart__container {
+
+  width: 176px;
+  height: 120px;
+  padding: 60px 30px 145px 70px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  position: absolute;
+  top: -95px;
+}
+
+
+/* стили добавления в корзину */
+.inCart {
+transform: scale(1.1);
+overflow: visible;
+height: auto;
+}
+.inCart:nth-child(1) { 
+  object-position: 10px ;
+}
+
+.inCart:nth-child(3) {
+  object-position: -10px;
+}

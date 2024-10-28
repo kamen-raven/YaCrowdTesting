@@ -1,0 +1,42 @@
+.orderButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1rem;
+  width: 174px;
+  height: 56px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: #21201F;
+  text-decoration: none;
+  background: #FCE000;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 210px;
+  z-index: 1000;
+}
+
+.orderButton:hover {
+  transform: scale(1.1);
+  transition: all .3s linear;
+}
+
+.orderButton__visibility {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity .3s linear,
+  visibility .3s linear,
+  transform .3s linear;
+}
+
+
+.hidden {
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s linear;
+}
