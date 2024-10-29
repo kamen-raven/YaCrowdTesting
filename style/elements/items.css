@@ -1,7 +1,7 @@
 .item {
   cursor: grab;
   display: flex;
-  scale: 1;
+  transform: scale(1);
   transition: .3s linear scale;
 }
 

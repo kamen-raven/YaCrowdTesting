@@ -17,10 +17,10 @@ export function onDragStart(event) {
 }
 
 // Обработка успешного сброса
-export function onDrop(event) { 
+export function onDrop(event) {
   event.preventDefault();
   draggedItem.classList.remove('dragging');
-  if (event.target === cart || inCart) { 
+  if (event.target === cart || inCart) {
     cart.appendChild(draggedItem);
     draggedItem.classList.add('inCart');
     toggleCheckoutButton();
@@ -30,22 +30,25 @@ export function onDrop(event) {
 // Завершение перетаскивания мышью
 export function onDragEnd(event) {
   event.preventDefault();
-    draggedItem.classList.remove('dragging');
-    draggedItem = null;
+  draggedItem.classList.remove('dragging');
+  draggedItem = null;
 }
 
 
 /* TOUCH */
 // Начало перетаскивания touch
 export function onTouchStart(event) {
+  event.preventDefault();
   const touch = event.touches[0];
   touchStartX = touch.clientX;
   touchStartY = touch.clientY;
   draggedItem = event.target;
+  draggedItem.classList.add('dragging_mob');
 }
 
 // Движение перетаскивания touch
 export function onTouchMove(event) {
+  event.preventDefault();
   if (!draggedItem) return;
   const touch = event.touches[0];
   const deltaX = touch.clientX - touchStartX;
@@ -55,6 +58,8 @@ export function onTouchMove(event) {
 
 // Завершение перетаскивания touch
 export function onTouchEnd(event) {
+  event.preventDefault();
+  draggedItem.classList.remove('dragging_mob');
   if (!draggedItem) return;
   draggedItem.style.transform = '';
   if (isOverCart(event.changedTouches[0])) {
