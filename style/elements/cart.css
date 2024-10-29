@@ -39,9 +39,9 @@ overflow: visible;
 height: auto;
 }
 .inCart:nth-child(1) { 
-  object-position: 10px ;
+  transform: scale(1.1) translateX(10px);
 }
 
 .inCart:nth-child(3) {
-  object-position: -10px;
+  transform: scale(1.1) translateX(-10px);
 }
