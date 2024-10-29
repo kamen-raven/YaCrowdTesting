@@ -28,10 +28,11 @@
   gap: 5px;
   position: absolute;
   top: -95px;
+
 }
 
 
-/* стили добавления в корзину */
+/* Стили добавления в корзину */
 .inCart {
 transform: scale(1.1);
 overflow: visible;
