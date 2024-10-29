@@ -5,7 +5,7 @@
 }
 
 .showcase__image {
-  background-image: url('/images/Showcase.svg');
+  background-image: url('../../images/Showcase.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
